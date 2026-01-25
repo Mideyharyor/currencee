@@ -46,7 +46,7 @@ export const Dropdown = ({ options, selected, onSelect, currencyNames, label, co
                         e.target.onerror = null;
                         e.target.src = 'https://via.placeholder.com/40x30?text=$';
                     }}
-                    className="w-5 h-5 object-cover rounded-full shadow-sm grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all"
+                    className="w-5 h-5 object-cover rounded-full shadow-sm opacity-100 transition-all"
                 />
                 <span className="text-lg tracking-wide">{selected.toUpperCase()}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 text-slate-500 transition-transform group-hover:text-cyan-400 ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -63,7 +63,6 @@ export const Dropdown = ({ options, selected, onSelect, currencyNames, label, co
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
                             className="w-full bg-[#151515] text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 border border-transparent placeholder-slate-600 font-medium"
-                            autoFocus
                         />
                     </div>
                     <div className="overflow-y-auto flex-1 no-scrollbar p-1">
@@ -84,7 +83,7 @@ export const Dropdown = ({ options, selected, onSelect, currencyNames, label, co
                                         e.target.onerror = null;
                                         e.target.src = 'https://via.placeholder.com/40x30?text=$';
                                     }}
-                                    className="w-6 h-6 object-cover rounded-full shadow-sm grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all"
+                                    className="w-6 h-6 object-cover rounded-full shadow-sm opacity-100 transition-all"
                                 />
                                 <div className="flex flex-col">
                                     <span className="font-bold text-sm">{currency.toUpperCase()}</span>
