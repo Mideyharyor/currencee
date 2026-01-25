@@ -133,9 +133,9 @@ export default function App() {
                             type="number"
                             value={amount}
                             onChange={(e) => setAmount(e.target.value)}
-                            className="flex-1 bg-transparent text-2xl md:text-3xl font-light text-white p-3 md:p-5 outline-none w-full placeholder-slate-700 font-sans tracking-tight [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                            className="flex-1 bg-transparent text-lg sm:text-2xl md:text-3xl font-light text-white px-2.5 py-4 md:p-5 outline-none w-full placeholder-slate-700 font-sans tracking-tight [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                           />
-                          <div className="relative border-l border-white/5 p-2 flex items-center">
+                          <div className="relative border-l border-white/5 p-1 sm:p-2 flex items-center">
                             <Dropdown
                               options={currencyOptions}
                               selected={fromCurrency}
@@ -166,9 +166,9 @@ export default function App() {
                             type="text"
                             value={convertedAmount}
                             readOnly
-                            className="flex-1 bg-transparent text-2xl md:text-3xl font-light text-cyan-400 p-3 md:p-5 outline-none w-full cursor-default font-sans tracking-tight"
+                            className="flex-1 bg-transparent text-lg sm:text-2xl md:text-3xl font-light text-cyan-400 px-2.5 py-4 md:p-5 outline-none w-full cursor-default font-sans tracking-tight"
                           />
-                          <div className="relative border-l border-white/5 p-2 flex items-center">
+                          <div className="relative border-l border-white/5 p-1 sm:p-2 flex items-center">
                             <Dropdown
                               options={currencyOptions}
                               selected={toCurrency}

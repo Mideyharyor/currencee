@@ -37,7 +37,7 @@ export const Dropdown = ({ options, selected, onSelect, currencyNames, label, co
         <div className="relative" ref={dropdownRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-3 bg-[#111] hover:bg-[#161616] text-white border border-white/10 rounded-full px-4 py-2.5 transition-all font-semibold group focus:ring-1 focus:ring-cyan-500 focus:outline-none"
+                className="flex items-center gap-1.5 sm:gap-3 bg-[#111] hover:bg-[#161616] text-white border border-white/10 rounded-full px-2.5 sm:px-4 py-2 sm:py-2.5 transition-all font-semibold group focus:ring-1 focus:ring-cyan-500 focus:outline-none"
             >
                 <img
                     src={getFlagUrl(selected)}
@@ -46,9 +46,9 @@ export const Dropdown = ({ options, selected, onSelect, currencyNames, label, co
                         e.target.onerror = null;
                         e.target.src = 'https://via.placeholder.com/40x30?text=$';
                     }}
-                    className="w-5 h-5 object-cover rounded-full shadow-sm opacity-100 transition-all"
+                    className="w-4 h-4 sm:w-5 sm:h-5 object-cover rounded-full shadow-sm opacity-100 transition-all"
                 />
-                <span className="text-lg tracking-wide">{selected.toUpperCase()}</span>
+                <span className="text-base sm:text-lg tracking-wide">{selected.toUpperCase()}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 text-slate-500 transition-transform group-hover:text-cyan-400 ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -62,7 +62,7 @@ export const Dropdown = ({ options, selected, onSelect, currencyNames, label, co
                             placeholder="Type a currency..."
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
-                            className="w-full bg-[#151515] text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 border border-transparent placeholder-slate-600 font-medium"
+                            className="w-full bg-[#151515] text-white rounded-xl px-4 py-3 text-base focus:outline-none focus:ring-1 focus:ring-cyan-500 border border-transparent placeholder-slate-600 font-medium"
                         />
                     </div>
                     <div className="overflow-y-auto flex-1 no-scrollbar p-1">
