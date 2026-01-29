@@ -91,6 +91,8 @@ export default function App() {
       {/* Paradigm-inspired Horizon Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] h-[500px] bg-cyan-900/20 blur-[120px] rounded-[100%] pointer-events-none opacity-60 z-0"></div>
       <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[80%] h-[200px] bg-blue-600/30 blur-[100px] pointer-events-none z-0"></div>
+      
+       <Navigation />
 
       <MarqueeTicker
         tickerItems={tickerItems}
@@ -98,8 +100,6 @@ export default function App() {
         getFlagUrl={getFlagUrl}
         formatTickerRate={formatTickerRate}
       />
-
-      <Navigation />
 
       <HeroSection
         amount={amount}
