@@ -46,5 +46,10 @@ export const CURRENCY_TO_COUNTRY = {
 
 // Fallback list of popular currencies to prioritize in dropdowns
 export const POPULAR_CURRENCIES = [
-  'usd', 'eur', 'gbp', 'jpy', 'aud', 'cad', 'chf', 'cny', 'inr', 'ngn'
+  'usd', 'eur', 'gbp', 'jpy', 'ngn', 'cad', 'chf', 'cny', 'inr', 'aud'
+];
+
+// Ticker currencies to show in the marquee (base USD)
+export const TICKER_CURRENCIES = [
+  'gbp', 'jpy', 'ngn', 'cad', 'chf', 'eur', 'aud', 'cny', 'inr', 'mxn'
 ];
